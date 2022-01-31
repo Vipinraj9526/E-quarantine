@@ -1,0 +1,40 @@
+<html>
+<head>
+<title></title>
+</head>
+	<body>
+		<h1 align="center">Health Registeration</h1>
+		<form method="post">
+            {% csrf_token %}
+		<table align="center">
+			<tr>
+				<td>Health Department name</td>
+				<td><input type="text" name="h_name" required></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="Address" name="address" required></td>
+			</tr>
+			<tr>
+				<td>Landline</td>
+				<td><input type="text" name="landline" required>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="Email" name="email" required></td>
+			</tr>
+			<tr>
+				<td>password</td>
+				<td><input type="password" name="password" required></td>
+			</tr>
+{#			<tr>#}
+{#				<td>Confirm Password</td>#}
+{#				<td><input type="password" name="cpassword" ></td>#}
+{#			</tr>#}
+			<tr>
+				<td colspan="2"><input type="submit" name="register" value="Register"</td>
+			</tr>
+		</table>
+        </form>
+	</body>
+</html>
